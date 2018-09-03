@@ -15,10 +15,11 @@
   "dependencies": {
     "express": "^4.16.2",
     "formidable": "^1.2.1",
+    "images": "^3.0.1",
+    "lodash": "^4.17.4",
     "request": "^2.85.0",
     "tencent-ai-sign": "^1.0.2",
-    "underscore": "^1.9.1",
-    "lodash": "^4.17.4"
+    "underscore": "^1.9.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
