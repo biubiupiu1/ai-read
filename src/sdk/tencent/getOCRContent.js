@@ -45,7 +45,7 @@ function getOCRContent(base64) {
             method: 'POST',
             headers: {'Content-Type': 'application/x-www-form-urlencoded'},
             params: params,
-            timeout: 6000
+            timeout: 15000
         };
 
         getHttps({...reqocrparams}).then((res) => {
