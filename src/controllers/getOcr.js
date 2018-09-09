@@ -22,7 +22,6 @@ module.exports = function (req, res) {
                 break;
             case 'tencent':
                 getOCRContent(image.base64).then((data) => {
-                    console.log(data);
                     if (data.ret !== 0)
                         return res.status(500).send();
                     let obj = Object.assign({direction: 0, words_result: []}, image_info);
