@@ -11,4 +11,5 @@ app.use('/public', express.static('public'));
 
 // Serve the files on port 3000.
 app.listen(4000, function () {
+    console.log('Serve the files on port 4000');
 });

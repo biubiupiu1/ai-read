@@ -12,7 +12,6 @@ class Translate {
     }
 
     translate(param) {
-        console.log(this.appId);
         let salt = (new Date).getTime();
         let q = param.query;
         let from = param.from || 'auto';

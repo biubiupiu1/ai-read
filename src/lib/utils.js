@@ -31,8 +31,6 @@ module.exports = {
                     fs.unlink(files.img.path, function (err) {
                         if (err)
                             console.log('删除图片失败呢', err);
-                        else
-                            console.log('成功')
                     });
                     let base64 = imageBuf.toString("base64");
                     resolve({image: {base64: base64, width: _width, height: _height}, params, files})

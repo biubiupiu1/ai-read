@@ -12,8 +12,8 @@ module.exports = function (req, res) {
 
     let spd = req.query.spd || 5;
     let per = req.query.per || 0;
-    console.log(req.query);
-    SpeechClient.text2audio(req.query.text, {spd, per}).then(function (result) {
+    let text = decodeURI(req.query.text);
+    SpeechClient.text2audio(text, {spd, per}).then(function (result) {
         if (result.data) {
             // fs.writeFileSync('public/music/tts.mpVoice.mp3', result.data);
             let bufferStream = new stream.PassThrough();
