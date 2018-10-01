@@ -21,6 +21,7 @@ module.exports = function (req, res) {
             res.header('Content-Type', 'audio/mp3');
             res.header('Content-Disposition', 'attachment; filename=test.mp3');
             res.header('Content-Length', result.data.length);
+            res.header('Cache-control', 'max-age=86400');
 
             bufferStream.pipe(res)
         } else {
